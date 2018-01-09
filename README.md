@@ -1,4 +1,4 @@
-# Jolie Carte (VueJs2)
+# Jolie Carte (VueJs2) :
 
 Un site qui vous permettra de créer de jolies cartes pour envoyer des mots d'amour à vos proches.
 
@@ -6,7 +6,7 @@ Un site qui vous permettra de créer de jolies cartes pour envoyer des mots d'am
 
 Les instructions suivantes permettent de copier le projet, de le lancer localement sur votre ordinateur à des fins de tests ou de développement.
 
-### Prerequis
+### Prerequis :
 
 Nous avons besoin de [node.js](https://nodejs.org/en/), npm version 3+ et [GIT](https://git-scm.com/).
 
@@ -15,10 +15,11 @@ Utilisez les commandes suivantes pour génerer un pack node_modul (en utilisant 
 ```
 $ npm install -g vue-cli
 $ vue init webpack-simple
-$ npm install webpack-dev-server@2.9.7 --save-dev
 $ cd nomduprojet
 $ npm install
 $ npm run dev
+
+$ npm install webpack-dev-server@2.9.7 --save-dev : utiliser cette commande en cas de problème, la faire apres $npm install
 ```
 
 Ces commandes vont vous créer un dossier. Dans le dossier src/App.vue, remplacer les fichiers par ceux de Github. 
@@ -36,6 +37,6 @@ $ yarn add vue-router
 * [vue-cli](https://github.com/vuejs/vue-cli) - Dépendance
 * [vue-router](https://router.vuejs.org/en/installation.html) - Dépendance
 
-### Auteurs 
+### Auteurs :
 * **Orélia Sokambi** - *Chef de projet*
 * **Adèle Parison** - *Apprenante Front-End*
