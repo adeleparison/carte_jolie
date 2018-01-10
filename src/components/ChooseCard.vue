@@ -33,7 +33,7 @@ export default {
                 cards: [require ('../assets/beige.svg'),
                         require ('../assets/orange.svg'),
                         require ('../assets/blue.svg'),
-                        require ('../assets/green.svg'),
+                        require ('../assets/green.png'),
                         require ('../assets/orange-blue.svg'),
                         require ('../assets/red.svg'),
                        ]
@@ -56,11 +56,13 @@ export default {
     .info {
         border: 1px solid black;
         align-self: flex-end;
+        height: 400px;
+        width: 500px;
     }
     
     .info img {
-        height: 220px;
-        width: 200px;
+        height: 400px;
+        width: 430px;
     }
     
     .cards {
@@ -70,8 +72,8 @@ export default {
     }
     
     .cards img {
-        height: 100px;
-        width: 100px;
+        height: 170px;
+        width: 200px;
         padding: 20px;
     }
     
