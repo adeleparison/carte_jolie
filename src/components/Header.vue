@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            title : 'Cartes Jolies', 
+            title : 'CARTES JOLIES', 
         }
     }
 }
@@ -18,11 +18,13 @@ export default {
 
 <style scoped>
     nav {
-        background: blue;
+        background: #cc3876;
         margin: 0;
     }
     h2 {
-        color: black;
+        color: #fff;
         margin: 0;
+        padding: 20px;
+        text-align: center;
     }
 </style>
