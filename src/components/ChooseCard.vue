@@ -19,6 +19,15 @@ export default {
 
 <style>
     .wrapper {
-        height: 800px;
+        height: 700px;
+        width: 100%;
+        background: #ffeff6;
+        display: flex;
+    }
+    .info {
+        
+    }
+    .cards {
+        
     }
 </style>
