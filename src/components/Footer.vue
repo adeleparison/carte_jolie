@@ -8,4 +8,25 @@
 </template>
 
 <style>
+    footer {
+        background: #89b6d5;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+        color: #fff;
+    }
+    
+    .copyright {
+        margin: 0;
+        padding-bottom: 5px;
+    }
+    
+    a {
+        color: #c4e6ff;
+        text-decoration: none;
+    }
+    
+    a:hover {
+        
+    }
 </style>
