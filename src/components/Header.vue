@@ -9,7 +9,7 @@
 export default {
     data() {
         return {
-            title : 'CARTES JOLIES', 
+            title : 'DES CARTES JOLIES', 
         }
     }
 }
@@ -18,7 +18,7 @@ export default {
 
 <style scoped>
     nav {
-        background: #cc3876;
+        background: #89b6d5;
         margin: 0;
     }
     h2 {
@@ -26,5 +26,6 @@ export default {
         margin: 0;
         padding: 20px;
         text-align: center;
+        letter-spacing: 0.05em;
     }
 </style>
