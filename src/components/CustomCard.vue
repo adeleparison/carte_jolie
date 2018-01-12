@@ -1,6 +1,6 @@
 <template>
     <div class="page">
-        <div class="preview">
+        <div v-bind:class="preview.theme" class="preview">
             <!-- On lie "preview" avec les inputs-->
             <p> {{ preview.title }} </p>
             <p> {{ preview.text }} </p>
@@ -9,7 +9,7 @@
         <form class="customisation">
             <div class="theme-checkboxes">
 				<h3>Choisissez un thème :</h3>
-				<select>
+				<select v-model="preview.theme">
                     <!-- On utilise une boucle for pour récuperer les differents thèmes-->
 					<option v-for="theme in themes">{{ theme }}</option>
 				</select>
@@ -65,18 +65,65 @@
                    
                },
                
-               themes : ['Noël', 'Mariage', 'Anniversaire', 'Nouvel An', 'Naissance'],
+               themes: ['Noel', 'Mariage', 'Anniversaire', 'Nouvel An', 'Naissance', 'Saint-Valentin'],
            }
        } 
     }
 </script>
 
 <style>
+    
     .page {
         display: flex;
         
     }
     .preview {
+        background: #fff;
+        width: 350px;
+        height: 400px;
         border: 1px solid black;
+    }
+    
+    .Noel {
+	background: url(../assets/custom-card/wall_noel.png) no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    }
+    .Anniversaire {
+        background: url(../assets/custom-card/wall_birthday.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .Naissance {
+        background: url(../assets/custom-card/wall_nais.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .Saint-Valentin {
+        background: url(../assets/custom-card/wall_valentin.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .Nouvel {
+        background: url(../assets/custom-card/wall_newyear.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+    .Mariage {
+        background: url(../assets/custom-card/wall_mari.png) no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
 </style>
