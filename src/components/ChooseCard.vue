@@ -2,8 +2,11 @@
     <div>
         <div class="wrapper">
             <div class="info">
-            <img v-bind:src="info.img" alt="Dog Unicorn"/>
+            <!-- v-if = affiche si -->
+            <img v-bind:src="info.img" alt="Dog Unicorn" v-if="!select"/>
+            <img v-bind:src="info.img2" alt="Dog Unicorn" v-if="select"/>
             </div>
+            <!-- v-if="select == false" -->
             <div class="cards" v-if="!select">
                 <div>
                     <img v-for="card in cartes.cards" :src="card" @click="changeImg"/>
@@ -28,16 +31,17 @@ export default {
         return {
             // création d'un objet = ,
             info: {
-                img : require ('../assets/chienunicorn.png'),
+                img : require ('../assets/dog_bul_1.png'),
+                img2 : require ('../assets/dog_bul_2.png')
             },
             
             cartes: {
-                cards: [require ('../assets/beige.svg'),
-                        require ('../assets/orange.svg'),
-                        require ('../assets/blue.svg'),
-                        require ('../assets/green.svg'),
-                        require ('../assets/red.svg'),
-                        require ('../assets/orange-blue.svg'),
+                cards: [require ('../assets/beige_bul.svg'),
+                        require ('../assets/orange_bul.svg'),
+                        require ('../assets/blue_svg.svg'),
+                        require ('../assets/green_bul.svg'),
+                        require ('../assets/red_bul.svg'),
+                        require ('../assets/orange-blue_bul.svg'),
                        ]
             },
             
@@ -57,7 +61,7 @@ export default {
 
 <style>
     .wrapper {
-        height: 560px;
+        height: 552px;
         width: 100%;
         background: #e5f4ff;
         display: flex;
@@ -70,6 +74,7 @@ export default {
         align-self: flex-end;
         height: 400px;
         width: 430px;
+        padding-bottom: 20px;
     }
     
     .info img {
@@ -80,7 +85,7 @@ export default {
     .cards {
         height: 350px;
         width: 600px;
-        border: 1px solid black;  
+        /*border: 1px solid black;*/  
     }
     
     .cards img {
